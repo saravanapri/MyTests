@@ -17,8 +17,10 @@ jobs:
           java-version: '11'
           distribution: 'temurin'
 
-      - name: Set up Selenium
-        uses: actions/setup-selenium@v1          
+      - name: Install Google Chrome # Using shell script to install Google Chrome
+        run: |
+           chmod +x ./scripts/InstallChrome.sh
+            ./scripts/InstallChrome.sh        
 
       - name: Install Maven
         run: mvn -B install
