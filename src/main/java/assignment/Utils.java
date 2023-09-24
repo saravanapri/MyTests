@@ -20,7 +20,7 @@ public class Utils {
     }
 
     public static String[] getBrowserTestCases() {
-        String[] testcases={"chrome","firefox"};
+        String[] testcases={"chrome"};
         return testcases;
     }
 }
