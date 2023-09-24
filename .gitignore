@@ -1,0 +1,15 @@
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.metadata/
+.classpath
+.project
+.settings/
+*.launch
+*.iml
+*.ipr
+*.iws
+
+# Maven
+target/
