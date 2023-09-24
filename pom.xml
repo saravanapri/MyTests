@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.example</groupId>
     <artifactId>Ebay_tests</artifactId>
@@ -22,4 +24,19 @@
             <version>7.4.0</version>
         </dependency>
     </dependencies>
+
+    <!-- Define the build section to set compiler options -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version> <!-- Use a version compatible with your Maven installation -->
+                <configuration>
+                    <source>8</source> <!-- Set the desired Java source version -->
+                    <target>8</target> <!-- Set the desired Java target version -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
