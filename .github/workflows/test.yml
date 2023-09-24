@@ -21,4 +21,4 @@ jobs:
         run: mvn -B install
 
       - name: Run TestNG tests
-        run: mvn test
+        run: mvn test -Ptestng
