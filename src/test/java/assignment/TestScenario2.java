@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 public class TestScenario2 {
 
-    @Test(description = "Test to search the expected results, after search")
+    @Test(description = "Test to search the expected results, after search operation")
     public void TestCase2(){
 
         String []browserTestCases = Utils.getBrowserTestCases();
